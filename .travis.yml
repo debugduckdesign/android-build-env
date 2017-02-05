@@ -5,7 +5,7 @@ services: docker
 install: true
 
 script:
-  - docker build -t android-build-box .
+  - docker build -t android-build-env .
 
 after_script:
   - docker images

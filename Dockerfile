@@ -121,7 +121,7 @@ RUN wget -q -O tools.zip https://dl.google.com/android/repository/tools_r${ANDRO
     echo "Install extra-google-m2repository" && \
     echo y | tools/android --silent update sdk --no-ui --all --filter extra-google-m2repository &&\
     
-    echo "Install extra-google-m2repository" && \
+    echo "Install android support library old" && \
     echo y | tools/android --silent update sdk --no-ui --all --filter extra-android-support &&\
     
 # Install Android NDK, put it in a separate RUN to avoid travis-ci timeout in 10 minutes.
